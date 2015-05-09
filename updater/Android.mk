@@ -75,6 +75,10 @@ LOCAL_CFLAGS := \
     -Werror \
     -Wno-unused-parameter
 
+ifeq ($(BOARD_SUPPRESS_EMMC_WIPE),true)
+    LOCAL_CFLAGS += -DSUPPRESS_EMMC_WIPE
+endif
+
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
     $(LOCAL_PATH)/include
 
