@@ -72,7 +72,8 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_CFLAGS := \
     -Wall \
-    -Werror
+    -Werror \
+    -Wno-unused-parameter
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
     $(LOCAL_PATH)/include
